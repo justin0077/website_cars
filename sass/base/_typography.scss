@@ -1,0 +1,7 @@
+/*=============== TYPOGRAPHY ===============*/
+@import url('https://fonts-googleapis.com/css2?family="Exo:wght@400;500;600&display=swap');
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
