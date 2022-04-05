@@ -1,5 +1,6 @@
 /*=============== IMPORT ABSTRACTS SCSS DIRECTORY ===============*/
 @import 'abstracts/variables';
+@import 'abstracts/animations';
 
 /*=============== IMPORT BASE SCSS DIRECTORY ===============*/
 
@@ -9,6 +10,8 @@
 
 /*=============== IMPORT COMPONENTS SCSS DIRECTORY ===============*/
 
+@import 'components/button';
+@import 'components/swiper';
 
 /*=============== IMPORT LAYOUTS SCSS DIRECTORY ===============*/
 
@@ -18,3 +21,6 @@
 /*=============== IMPORT PAGES SCSS DIRECTORY ===============*/
 
 @import 'pages/home';
+@import 'pages/about';
+@import 'pages/popular';
+@import 'pages/features';
