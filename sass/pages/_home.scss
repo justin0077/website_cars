@@ -1,3 +1,4 @@
+/*=============== HOME ===============*/
 .home {
     position: relative;
     overflow: hidden;
@@ -6,6 +7,10 @@
         position: relative;
         padding-top: 4rem;
         row-gap: 3rem;
+
+        @media screen and (min-width: 1040px) {
+            padding-top: 2rem;
+        }
     }
 
     &__data {
@@ -38,6 +43,10 @@
     &__img {
         width: 280px;
         justify-self: center;
+
+        @media screen and (min-width: 1040px) {
+            width: 380px;
+        }
     }
 
     &__car {
@@ -46,6 +55,14 @@
         align-items: center;
         column-gap: 4rem;
         margin-bottom: 2rem;
+
+        @media screen and (min-width: 1040px) {
+            column-gap: 7rem;
+        }
+
+        @media screen and (max-width: 320px) {
+            column-gap: 2rem;
+        }
 
         &-name {
             font-size: .625rem;
@@ -71,6 +88,11 @@
             justify-content: center;
             align-items: center;
             font-size: .875rem;
+
+            @media screen and (min-width: 1040px) {
+                font-size: 1.25rem;
+                margin-bottom: 1rem;
+            }
         }
     }
 

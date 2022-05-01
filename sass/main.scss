@@ -7,11 +7,12 @@
 @import 'base/base';
 @import 'base/typography';
 
-
 /*=============== IMPORT COMPONENTS SCSS DIRECTORY ===============*/
 
 @import 'components/button';
 @import 'components/swiper';
+@import 'components/scrollbar';
+@import 'components/scrollup'; 
 
 /*=============== IMPORT LAYOUTS SCSS DIRECTORY ===============*/
 
@@ -24,3 +25,6 @@
 @import 'pages/about';
 @import 'pages/popular';
 @import 'pages/features';
+@import 'pages/featured';
+@import 'pages/offer';
+@import 'pages/logos';

@@ -1,15 +1,38 @@
+/*=============== ABOUT ===============*/
 .about {
     &__container {
         row-gap: 6rem;
+
+        @media screen and (min-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: 1040px) {
+            column-gap: 6rem;
+            align-items: center;
+        }
     }
 
     &__group {
         position: relative;
+
+        @media screen and (min-width: 576px) {
+            width: 350px;
+            justify-self: center;   
+        }
+
+        @media screen and (min-width: 1040px) {
+            width: 480px;
+        }
     }
 
     &__img {
         width: 310px;
         border-radius: .5rem;
+
+        @media screen and (min-width: 1040px) {
+            width: 480px;
+        }
     }
 
     &__card {
@@ -21,6 +44,16 @@
         backdrop-filter: blur(16px);
         padding: 1rem .75rem;
         text-align: center;
+        border-radius: 1rem;
+
+        @media screen and (max-width: 320px) {
+            width: 150px;
+        }
+
+        @media screen and (min-width: 1040px) {
+            width: 198px;
+            padding: 1rem 1.25rem;
+        }   
 
         &-title {
             font-size: var(--h3-font-size);
@@ -39,5 +72,10 @@
 
     &__description {
         margin-bottom: 2rem;
+
+        @media screen and (min-width: 1040px) {
+            padding-right: 4rem;
+            margin-bottom: 3rem;
+        }
     }
 }

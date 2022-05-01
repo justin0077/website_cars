@@ -1,1 +1,121 @@
 /*=============== FOOTER ===============*/
+.footer {
+    position: relative;
+    overflow: hidden;
+
+    .shape {
+        &__big,
+        &__small {
+            position: absolute;
+        }
+
+        &__big {
+            width: 300px;
+            height: 300px;
+            left: -12rem;
+            top: 6rem;
+        }
+
+        &__small {
+            right: -13rem;
+            bottom: -6rem;
+        }
+    }
+
+    &__container {
+        row-gap: 2.5rem;
+
+        @media screen and (min-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: 1040px) {
+            grid-template-columns: repeat(4, max-content);
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .25rem;
+        color: var(--title-color);
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-semi-bold);
+        margin-bottom: 1.25rem; 
+        transition: .3s;
+
+        @media screen and (min-width: 1040px) {
+            column-gap: .5rem;
+        }
+
+        i {
+            font-size: 1.5rem;
+            font-weight: 500;
+
+            @media screen and (min-width: 1040px) {
+                font-size: 2rem;
+            }
+        }
+
+        &:hover {
+            color: var(--first-color);
+        }
+    }
+
+    &__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: 1.25rem;
+
+        @media screen and (min-width: 1040px) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+
+        @media screen and (min-width: 1040px) {
+            row-gap: .75rem;
+        }
+    }
+
+    &__link, 
+    &__social-link {
+        color: var(--text-color);
+        transition: .3s;
+    }
+
+    &__link:hover,
+    &__social-link:hover {
+        color: var(--title-color);
+    }
+
+    &__social {
+        display: flex;
+        column-gap: 1.5rem;
+
+        &-link {
+            font-size: 1.2rem;
+
+            @media screen and (min-width: 1040px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__copy {
+        display: block;
+        margin-top: 4.5rem;
+        text-align: center;
+        font-size: var(--smaller-font-size);
+
+        @media screen and (min-width: 1040px) {
+            margin-top: 8rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+}
